@@ -1,94 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>.: Welton Dev :.</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./animate.min.css">
+  <title>:: Welton Rodrigues ::</title>
 </head>
 
 <body>
-    <header>
-        <section>
-            <h3>Portifólio</h3>
-        </section>
-        <section>
-            <nav>
-                <a href="">Sobre mim</a>
-                <a href="">Projetos</a>
-                <a href="">Serviços</a>
-                <a href="">Minhas skills</a>
-            </nav>
-        </section>
-    </header>
-
-    <main>
-        <section class="intro">
-            <section class="intro-text">
-                <h2 class="dev">Olá, eu sou o Welton Rodrigues!
-                <p class="dev">Desenvolvedor Back-end Jr. 👨‍💻</p></h2>
-                <section class="intro-buttons">
-                    <a href="" class="btn-curriculo">Download CV</a>
-                    <a href="" class="btn-contato">Entre em contato</a>
-                </section>
-            </section>
-            <section class="intro-logo">
-                <img src="./assets/profile.jpeg" class="profile" alt="Welton peril" />
-            </section>
-        </section>
-
-        <section class="about">
-            <h2>Sobre mim</h2>
-            <p>Estudante de Javascript, ReactJS, NodeJs, e MySql busco oportunidade para adquirir experiência com desenvolvimento web. Atualmente estou participanto do bootcamp Gama Experience da Gama Academy</p>
-        </section>
-
-        <section class="contact-icons">
-        <div class="contact-item" >
-            <span class="contact-img">
-                <img src="./assets/phone.png" alt="profile"/>
-            </span>
-            <strong>Telefone</strong>
-            <p>(11) 9 6658-0910</p>
+  <header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre mim</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li>Experiêcia</li>
+    </ul>
+  </header>
+  <main>
+    <section class="home" id="home">
+      <section class="autor">
+        <h3 class="home-texto">OLÁ, EU SOU</h3>
+        <h1 class="home-texto-autor">WELTON RODRIGUES</h1>
+        <h3 class="home-texto">DESENVOLVEDOR BACK-END JR.</h3>
+        <div>
+          <a href="https://www.linkedin.com/in/welton-dev/" target="_blank"><img src="./linkedin.png"></a>
+          <a href="https://github.com/WeltonDev/WeltonDev" target="_blank"><img src="./github.png"></a>
+        </div>
+      </section>
+      <section class="logo">
+        <img src="./logo.png">
+      </section>
+    </section>
+    <section class="about" id="about">
+      <h1>Sobre mim</h1>
+      <p>
+        Estudante de Javascript, ReactJS, NodeJs, e MySql busco oportunidade para adquirir experiência com
+        desenvolvimento web. Participei do bootcamp Gama Experience da Gama Academy, e atualmente sou estudante de
+        Tecnologia da Informação pela UNIVESP.
+      </p>
+    </section>
+    <section class="projects" id="projects">
+      <h1>Projetos</h1>
+      <div id="project-container">
+        <div class="project-item">
+          <a href="https://dindinapp.vercel.app/" alt="din din finanças" target="_blank">
+            <img class="project-img" src="./dindinProject.gif">
+            <h3 class="project-title">Din Din Finanças</h3>
+            <p class="project-text">Plataforma de finanças criada durante o bootcamp XP41 da Gama Academy com o intuito
+              de consolidar os conhecimentos adquiridos em HTML e CSS.</p>
+          </a>
         </div>
 
-        <div class="contact-item" >
-            <span class="contact-img">
-                <img src="./assets/mail.png" alt="profile"/>
-            </span>
-            <strong>E-mail</strong>
-            <p>welton.araujo2014@gmail.com</p>
+        <div class="project-item">
+          <a href="https://omma.vercel.app/" alt="omma receitas" target="_blank">
+            <img class="project-img" src="./omma.gif">
+            <h3 class="project-title">Omma Receitas</h3>
+            <p class="project-text">Página de receitas criada durante o bootcamp XP41 da Gama Academy.</p>
+          </a>
         </div>
 
-        <div class="contact-item" >
-            <span class="contact-img">
-                <img src="./assets/twitter.png" alt="profile"/>
-            </span>
-            <strong>Twitter</strong>
-            <p>@Weltondev</p>
+        <div class="project-item">
+          <a href="https://temperaturapp.vercel.app/" alt="Conversor de temperatura" target="_blank">
+            <img class="project-img" src="./convert.gif">
+            <h3 class="project-title">Conversor de Temperatura</h3>
+            <p class="project-text">Conversor de graus celcius (C°) em Farenheit (F°).</p>
+          </a> 
         </div>
 
-        <div class="contact-item" >
-            <span class="contact-img">
-                <img src="./assets/linkedin.png" alt="profile"/>
-            </span>
-            <strong>Linkedin</strong>
-            <p>Welton Rodrigues</p>
+        <div class="project-item">
+          <a href="https://appimc.vercel.app/" alt="Calculador de IMC" target="_blank">
+            <img class="project-img" src="./imc.gif">
+            <h3 class="project-title">Calculadora de IMC</h3>
+            <p class="project-text">Calculadora de Índice de Massa Corporal (IMC).</p>
+          </a> 
         </div>
 
-        <div class="contact-item" >
-            <span class="contact-img">
-                <img src="./assets/github.png" alt="profile"/>
-            </span>
-            <strong>Github</strong>
-            <p>WeltonDev</p>
+                <div class="project-item">
+          <a href="https://curriculo-welton.vercel.app/" alt="curriculo welton" target="_blank">
+            <img class="project-img" src="./curriculo.gif">
+            <h3 class="project-title">Curriculo Digital</h3>
+            <p class="project-text">Curriculo Digital com modo noturno.</p>
+          </a> 
         </div>
-        </section>
-    </main>
-    <footer>Feito por <a href="">Welton Dev</a></footer>
-    <script src="./js/script.js"></script>
 
+        <div class="project-item">
+          <a href="https://soundgardenn.vercel.app" alt="sound Garden" target="_blank">
+            <img class="project-img" src="./sound.gif">
+            <h3 class="project-title">Sound Garden</h3>
+            <p class="project-text">Sound Garden é um projeto que foi criado durante o XP41 da Gama Academy para desenvolver os conhecimentos dos alunos adquiridos em consumo de API.</p>
+          </a> 
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
