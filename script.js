@@ -1,21 +1,12 @@
-const linksMenu = document.querySelectorAll('.menu a[href^="#"]');
+const btnMenu = document.querySelector('#btn-mobile');
 
-// function distanceFromTop(element) {
-//   const id = element.getAttribute("href");
-//   return document.querySelector(id).offsetTop;
-// }
+function toggleMenu() {
+  nav = document.querySelector('nav');
+  nav.classList.toggle('active');
+}
 
-// function scrollToSection(event) {
-//   event.preventDefault();
-//   const element = event.target;
-//   const id = element.getAttribute('href');
-//   const section = document.querySelector(id);
-//   console.log(section);
-// }
+btnMenu.addEventListener('click', toggleMenu);
 
-// linksMenu.forEach((link)=>{
-//   link.addEventListener('click', scrollToSection)
-// })
 setInterval(()=> {
   let dom = document.querySelector('.home-texto-autor');
   dom.classList.toggle('animate__animated');
