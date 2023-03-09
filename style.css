@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{ 
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #09090B;
 }
@@ -14,6 +18,18 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
+  scroll-behavior: smooth;
+  
+}
+
+nav {
+  width: 100vw;
+  border-bottom: #828282 1px solid;
+  padding: 1rem;
+  position: fixed;
+  background-color: #09090B;
+  top: 0;
+  z-index: 100;
 }
 
 header li {
@@ -118,7 +134,13 @@ ul li a {
   align-items: center;
   padding: 1.25rem 1.563rem;
   margin: 1rem;
- 
+  transition: .5s;
+ border-radius: 8px;
+}
+
+.project-item:hover {
+  transform: translate3d(10px, -10px, 10px);
+  box-shadow: 10px 10px 10px rgb(48, 47, 47);
 }
 
 .project-img {
